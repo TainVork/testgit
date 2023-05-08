@@ -1,5 +1,7 @@
 ---
-- hosts: all
-  become: yes
+- name: ping module demo
+  hosts: all
+  become: false
   tasks:
-  - ping
+    - name: test connection
+      ansible.builtin.ping:
