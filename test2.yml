@@ -1,8 +1,7 @@
 ---
-- hosts: all
-  become: yes
+- name: "Test playbook run"
+  hosts: all
   tasks:
-  - ping:
-  crash: data
-
-fhdfhd
+    - name: "Debug"
+      ansible.builtin.debug:
+        msg: "Test debug"
