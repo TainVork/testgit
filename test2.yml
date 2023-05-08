@@ -5,3 +5,4 @@
     - name: "Debug"
       ansible.builtin.debug:
         msg: "Test debug"
+fg
